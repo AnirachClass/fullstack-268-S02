@@ -22,6 +22,12 @@ db.run(`CREATE TABLE IF NOT EXISTS books (
   author TEXT
 )`);
 
+
+app.get("/", (req, res) => {
+  res.send("Hello Books World!");
+});
+
+
 // route to get all books
 app.get('/books', (req, res) => {
   db.all('SELECT * FROM books', (err, rows) => {
