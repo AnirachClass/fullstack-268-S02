@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 // set db url
-const dbUrl = 'postgres://webadmin:SXEsrm45036@node71539-node267wed.proen.app.ruk-com.cloud:11739/Books'
+const dbUrl = 'postgres://webadmin:BVSncc39680@node84819-fs-268-thu.proen.app.ruk-com.cloud:11776/Books'
 
 // create a connection to the database
 const sequelize = new Sequelize(dbUrl);
